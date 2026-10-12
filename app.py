@@ -3,7 +3,9 @@ import json
 import os
 import re
 
-api_key = os.getenv("GROQ_API_KEY")
+from dotenv import load_dotenv
+
+load_dotenv()
 
 import streamlit as st
 from groq import Groq
